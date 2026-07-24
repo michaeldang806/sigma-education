@@ -1,5 +1,8 @@
 # SIGMA Education
 
+Static GitHub Pages site for SIGMA Universe, including the IB DP Biology portal
+and ARC 01 Episode 01 learning experience.
+
 Cinematic Knowledge Universe for IB, IGCSE and Cambridge learners.
 
 ## GitHub Pages

@@ -29,3 +29,24 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: .12 });
 document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+
+document.querySelectorAll(".case").forEach((card, index) => {
+  const correct = ["living", "not", "edge"][index];
+  const result = card.querySelector(".case-result");
+  card.querySelectorAll("button").forEach(button => button.addEventListener("click", () => {
+    const isCorrect = button.dataset.answer === correct;
+    result.className = `case-result ${isCorrect ? "correct" : "retry"}`;
+    result.textContent = isCorrect
+      ? "✓ Strong classification. Your evidence matches the system model."
+      : "Try again: test cells, independent metabolism and genetic continuity.";
+  }));
+});
+
+const revealAnswer = document.querySelector(".reveal-answer");
+if (revealAnswer) {
+  revealAnswer.addEventListener("click", () => {
+    const framework = document.querySelector(".answer-framework");
+    framework.hidden = !framework.hidden;
+    revealAnswer.textContent = framework.hidden ? "Reveal answer framework" : "Hide answer framework";
+  });
+}
