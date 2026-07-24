@@ -3,82 +3,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#020d12">
-  <meta name="description" content="SIGMA Biology ARC 01 Episode 01 — What Is Life?">
+  <meta name="theme-color" content="#020c12">
+  <meta name="description" content="SIGMA Biology — Episode 01: What Is Life?">
   <title>What Is Life? — SIGMA Biology</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="poster-episode-page">
-  <header class="poster-toolbar" aria-label="Episode navigation">
-    <a class="poster-back" href="biology.html#episodes">
-      <span aria-hidden="true">←</span>
-      <span>ARC 01</span>
-    </a>
-    <p><b>EPISODE 01</b><span>WHAT IS LIFE?</span></p>
-    <a class="poster-fullscreen" href="episode-01-background.png" target="_blank" rel="noopener">
-      FULL VIEW <span aria-hidden="true">↗</span>
-    </a>
+<body class="template-episode-page">
+  <header class="template-toolbar">
+    <a href="biology.html#episodes" data-i18n="back">← ARC 01</a>
+    <div class="language-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="vi" aria-pressed="false">Tiếng Việt</button>
+    </div>
+    <button class="fullscreen-button" id="fullscreen-button" type="button" data-i18n="fullscreen">Full screen</button>
   </header>
 
-  <main class="poster-stage">
-    <article class="episode-artboard" aria-labelledby="episode-title">
-      <h1 id="episode-title" class="sr-only">SIGMA Biology Universe — Episode 1: What Is Life?</h1>
-
-      <section class="sr-only" aria-label="Episode learning content">
-        <h2>Hook — Can it be alive?</h2>
-        <p>Fire moves, changes and uses energy. A crystal grows, has structure and responds slightly. A robot moves, follows rules and can think using artificial intelligence. Why are they not considered alive?</p>
-
-        <h2>Cinematic story</h2>
-        <p>Billions of years ago, Earth was rock, water and energy. From simple chemicals, the first living things appeared. What made them different from everything else?</p>
-
-        <h2>Aha moment</h2>
-        <p>Life is not simply movement or growth. Life is organized complexity that can maintain itself and continue.</p>
-
-        <h2>Core explanation</h2>
-        <p>Life is characterized by organization, metabolism, homeostasis, growth, response, reproduction and adaptation.</p>
-
-        <h2>Example comparison</h2>
-        <p>A plant is living because it is organized, uses energy, maintains internal balance, grows, responds, reproduces and adapts over generations. A rock does not perform these coordinated processes.</p>
-
-        <h2>IB skill focus</h2>
-        <p>Observation and questioning: observe, make questions, investigate, test evidence and draw conclusions.</p>
-
-        <h2>Real-world connection</h2>
-        <p>Understanding life helps us develop medicines, protect biodiversity, improve agriculture and solve global challenges.</p>
-
-        <h2>Next hook</h2>
-        <p>Viruses can reproduce, but are they alive?</p>
+  <main class="template-stage">
+    <article class="template-artboard" aria-labelledby="episode-title">
+      <section class="template-title">
+        <small data-i18n="series">SIGMA BIOLOGY · ARC 01 · EPISODE 01</small>
+        <h1 id="episode-title" data-i18n="title">WHAT IS LIFE?</h1>
+        <p data-i18n="subtitle">The characteristics that distinguish living systems</p>
       </section>
 
-      <a class="poster-hotspot hotspot-hook" href="#episode-key" aria-label="Jump to the episode key takeaway">
-        <span>START HERE</span>
+      <section class="template-panel panel-1">
+        <h2><b>01</b><span data-i18n="p1_title">HOOK</span></h2>
+        <p data-i18n="p1_body">Fire uses energy. Crystals grow. Robots move. Why are they not alive?</p>
+        <strong data-i18n="p1_prompt">What evidence would convince you?</strong>
+      </section>
+
+      <section class="template-panel panel-2">
+        <h2><b>02</b><span data-i18n="p2_title">DISCOVER</span></h2>
+        <p data-i18n="p2_body">Life emerged from non-living chemistry, but living systems gained something remarkable: coordinated organization.</p>
+      </section>
+
+      <section class="template-panel panel-3">
+        <h2><b>03</b><span data-i18n="p3_title">AHA MOMENT</span></h2>
+        <p class="panel-emphasis" data-i18n="p3_body">Life is an organized, self-maintaining system.</p>
+      </section>
+
+      <section class="template-panel panel-4">
+        <h2><b>04</b><span data-i18n="p4_title">CORE IDEA</span></h2>
+        <p data-i18n="p4_intro">Living systems coordinate:</p>
+        <ul>
+          <li data-i18n="p4_1">Organization</li>
+          <li data-i18n="p4_2">Metabolism</li>
+          <li data-i18n="p4_3">Homeostasis</li>
+          <li data-i18n="p4_4">Growth and response</li>
+          <li data-i18n="p4_5">Reproduction and evolution</li>
+        </ul>
+      </section>
+
+      <section class="template-panel panel-5">
+        <h2><b>05</b><span data-i18n="p5_title">COMPARE</span></h2>
+        <div class="compare-columns">
+          <div><strong data-i18n="living">LIVING</strong><p data-i18n="living_body">Cells work together, use energy, regulate internal conditions and carry genetic information.</p></div>
+          <div><strong data-i18n="nonliving">NON-LIVING</strong><p data-i18n="nonliving_body">May show one life-like trait, but not the coordinated system as a whole.</p></div>
+        </div>
+      </section>
+
+      <section class="template-panel panel-6">
+        <h2><b>06</b><span data-i18n="p6_title">IB SKILL</span></h2>
+        <p data-i18n="p6_body">Observe → question → test evidence → draw a justified conclusion.</p>
+        <strong data-i18n="p6_prompt">Avoid deciding from one trait alone.</strong>
+      </section>
+
+      <section class="template-panel panel-7">
+        <h2><b>07</b><span data-i18n="p7_title">NEXT QUESTION</span></h2>
+        <p data-i18n="p7_body">Viruses reproduce only inside host cells. Are they alive?</p>
+      </section>
+
+      <section class="template-panel panel-key">
+        <h2 data-i18n="key_title">KEY TAKEAWAY</h2>
+        <p data-i18n="key_body">Life is defined by a coordinated system, not one isolated characteristic.</p>
+      </section>
+
+      <section class="template-panel panel-summary">
+        <h2 data-i18n="summary_title">TODAY WE LEARNED</h2>
+        <p data-i18n="summary_body">Organization + energy + regulation + information + evolution work together to make life possible.</p>
+      </section>
+
+      <a class="template-panel panel-next" href="biology.html#episodes">
+        <h2 data-i18n="next_title">CONTINUE</h2>
+        <p data-i18n="next_body">Return to the ARC roadmap</p>
       </a>
-      <a class="poster-hotspot hotspot-next" href="biology.html#episodes" aria-label="Return to the ARC roadmap">
-        <span>ARC ROADMAP</span>
-      </a>
+
+      <p class="template-motto" data-i18n="motto">PEACEFUL MIND • KINDLY HEART • KEEP GROWING.</p>
     </article>
-
-    <section class="episode-key" id="episode-key" aria-label="Episode key takeaway">
-      <span class="key-sigma">Σ</span>
-      <div>
-        <small>EPISODE 01 · KEY TAKEAWAY</small>
-        <p>Life is not defined by one isolated trait. It is a coordinated, organized system that uses energy and information to maintain itself, respond, reproduce and evolve.</p>
-      </div>
-    </section>
-
-    <nav class="poster-actions" aria-label="Episode actions">
-      <a href="biology.html#episodes"><span aria-hidden="true">←</span> Biology Portal</a>
-      <a class="poster-primary-action" href="episode-01-background.png" target="_blank" rel="noopener">Open 4K Poster <span aria-hidden="true">↗</span></a>
-    </nav>
   </main>
 
-  <footer class="poster-footer">
-    <span>Σ SIGMA BIOLOGY UNIVERSE</span>
-    <p>PEACEFUL MIND • KINDLY HEART • KEEP GROWING.</p>
-    <small>ARC 01 · EPISODE 01</small>
-  </footer>
+  <script src="episode-01-language.js"></script>
 </body>
 </html>
