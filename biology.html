@@ -3,150 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#031b20">
-  <meta name="description" content="Enter the SIGMA Biology Universe — an IB DP Biology SL and HL cinematic learning journey.">
-  <title>SIGMA Biology — IB DP Learning Universe</title>
+  <meta name="theme-color" content="#031713">
+  <meta name="description" content="Enter the SIGMA Biology Universe and travel from molecules to the biosphere.">
+  <title>SIGMA Biology — The Living Universe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<body class="biology-page">
+<body class="biology-landing">
+  <div class="biology-fixed-art" role="img" aria-label="A cinematic journey through the connected levels of life, from DNA and cells to organisms and the biosphere"></div>
+  <div class="biology-atmosphere" aria-hidden="true"></div>
   <div class="progress" aria-hidden="true"></div>
-  <header class="nav">
+
+  <header class="nav biology-nav">
     <a class="brand" href="index.html" aria-label="Back to SIGMA Education">
       <img class="brand-logo" src="sigma-official-logo.png" alt="">
       <span>SIGMA <small>BIOLOGY</small></span>
     </a>
     <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#current-arc">Current ARC</a>
-      <a href="#episodes">Episodes</a>
-      <a href="#method">Learning path</a>
+      <a href="index.html#universe">Universe</a>
+      <a href="#overview">Biology</a>
+      <a href="#journey">Journey</a>
+      <a href="episode-01.html">Episode 01</a>
     </nav>
-    <a class="nav-cta biology-cta" href="episode-01.html">Continue learning</a>
+    <a class="nav-cta biology-enter" href="#journey">Explore Biology</a>
   </header>
 
-  <main>
-    <section class="biology-hero">
-      <div class="cell-field" aria-hidden="true"></div>
-      <div class="biology-copy reveal">
-        <a class="breadcrumb" href="index.html">← SIGMA UNIVERSE / BIOLOGY</a>
-        <p class="eyebrow">IB DP BIOLOGY · SL + HL · FIRST ASSESSMENT 2025</p>
-        <h1>Life is not a list.<br><span>It is a living system.</span></h1>
-        <p class="lede">Travel from molecules to the biosphere. Discover how structure, function, interaction and transformation connect every level of life.</p>
-        <div class="actions">
-          <a class="primary biology-cta" href="episode-01.html">Continue ARC 01 <span>→</span></a>
-          <a class="secondary" href="#roadmap">View course roadmap</a>
+  <main class="biology-landing-main">
+    <section class="biology-entry" id="overview">
+      <div class="biology-entry-copy reveal">
+        <a class="biology-breadcrumb" href="index.html#universe">← EXPLORE THE UNIVERSE</a>
+        <p class="biology-kicker">THE LIVING UNIVERSE</p>
+        <h1>Biology</h1>
+        <p class="biology-intro">Travel from molecules to the biosphere. Discover how <strong>structure, function, interaction and transformation</strong> connect every level of life.</p>
+        <div class="biology-entry-actions">
+          <a class="biology-primary" href="#journey">Enter the living world <span>→</span></a>
+          <a class="biology-quiet-link" href="episode-01.html">Continue Episode 01</a>
         </div>
-        <div class="course-facts">
-          <span><b>SL + HL</b> two pathways</span>
-          <span><b>4</b> syllabus themes</span>
-          <span><b>4</b> levels of organization</span>
+        <div class="biology-levels" aria-label="The levels of biological organization">
+          <span>Molecules</span><i></i><span>Cells</span><i></i><span>Organisms</span><i></i><span>Biosphere</span>
         </div>
       </div>
-      <div class="biology-visual reveal" aria-label="A luminous living cell and connected biological levels">
-        <div class="bio-orbit orbit-a"></div>
-        <div class="bio-orbit orbit-b"></div>
-        <div class="living-cell"><span>DNA</span><i></i><i></i><i></i></div>
-        <span class="bio-label molecule">MOLECULE</span>
-        <span class="bio-label cell">CELL</span>
-        <span class="bio-label organism">ORGANISM</span>
-        <span class="bio-label ecosystem">ECOSYSTEM</span>
+      <a class="biology-scroll" href="#journey"><span>DISCOVER THE CONNECTIONS</span><b>↓</b></a>
+    </section>
+
+    <section class="biology-glass-section" id="journey">
+      <div class="biology-section-heading reveal">
+        <p class="biology-kicker">ONE LIVING SYSTEM</p>
+        <h2>Every scale tells<br>the same story.</h2>
+        <p>Biology is more than a collection of facts. It is the study of relationships—how form enables function, how systems interact, and how life changes while remaining continuous.</p>
+      </div>
+      <div class="biology-lens-grid">
+        <article class="biology-lens reveal"><b>01</b><small>STRUCTURE</small><h3>How is life built?</h3><p>Explore the architecture of molecules, membranes, cells and organisms.</p></article>
+        <article class="biology-lens reveal"><b>02</b><small>FUNCTION</small><h3>How does life work?</h3><p>Connect biological form to transport, metabolism, communication and survival.</p></article>
+        <article class="biology-lens reveal"><b>03</b><small>INTERACTION</small><h3>How does life connect?</h3><p>Discover relationships within cells, between organisms and across ecosystems.</p></article>
+        <article class="biology-lens reveal"><b>04</b><small>TRANSFORMATION</small><h3>How does life change?</h3><p>Follow energy, information, inheritance, adaptation and evolution through time.</p></article>
       </div>
     </section>
 
-    <section class="bio-status" aria-label="Current course status">
-      <div><small>PROGRAM</small><strong>IB DP Biology</strong></div>
-      <div><small>SEASON</small><strong>I · Origin of Life</strong></div>
-      <div><small>CURRENT ARC</small><strong>01 · Language of Life</strong></div>
-      <div><small>MODE</small><strong class="active-dot">Learning active</strong></div>
-    </section>
-
-    <section class="section bio-roadmap" id="roadmap">
-      <div class="section-head reveal">
-        <div><p class="eyebrow">THE COMPLETE MAP</p><h2>Four themes.<br>One connected life.</h2></div>
-        <p>The IB Biology course is organized through themes and levels of organization. SIGMA turns that framework into a navigable learning universe.</p>
-      </div>
-      <div class="theme-grid">
-        <article class="theme-card reveal"><b>A</b><small>UNITY & DIVERSITY</small><h3>What makes life one—and endlessly different?</h3><p>Water · nucleic acids · cells · diversity · evolution</p></article>
-        <article class="theme-card reveal"><b>B</b><small>FORM & FUNCTION</small><h3>How does biological structure enable function?</h3><p>Membranes · organelles · specialization · transport</p></article>
-        <article class="theme-card reveal"><b>C</b><small>INTERACTION & INTERDEPENDENCE</small><h3>How do living systems communicate and depend on one another?</h3><p>Enzymes · signalling · defence · ecosystems</p></article>
-        <article class="theme-card reveal"><b>D</b><small>CONTINUITY & CHANGE</small><h3>How does life persist, reproduce and transform?</h3><p>Replication · inheritance · homeostasis · evolution</p></article>
-      </div>
-      <div class="levels reveal">
-        <span>MOLECULES</span><i>→</i><span>CELLS</span><i>→</i><span>ORGANISMS</span><i>→</i><span>ECOSYSTEMS</span>
-      </div>
-    </section>
-
-    <section class="section current-arc" id="current-arc">
-      <div class="arc-panel reveal">
-        <div class="arc-number">ARC<br><strong>01</strong></div>
-        <div class="arc-copy">
-          <p class="eyebrow">SEASON I · THE ORIGIN OF LIFE</p>
-          <h2>The Language of Life</h2>
-          <p>Before a cell can live, life needs a language: atoms form molecules, molecules store information, and interactions create an organized system capable of continuity and change.</p>
-          <div class="big-question"><small>BIG QUESTION</small>How can non-living matter become a system we recognize as alive?</div>
-          <a class="primary biology-cta" href="#episodes">Explore the episodes <span>→</span></a>
+    <section class="biology-start">
+      <div class="biology-start-card reveal">
+        <div>
+          <p class="biology-kicker">YOUR FIRST DISCOVERY</p>
+          <h2>What counts as life?</h2>
+          <p>Begin ARC 01 and discover the boundary between a collection of molecules and a living system.</p>
         </div>
-        <div class="arc-dna" aria-label="Knowledge DNA for ARC 01">
-          <span>Water</span><span>Carbon</span><span>DNA</span><span>Energy</span><span>Cells</span>
-          <div>KNOWLEDGE<br><b>DNA</b></div>
-        </div>
+        <a class="biology-primary" href="episode-01.html">Start Episode 01 <span>→</span></a>
       </div>
-    </section>
-
-    <section class="section episode-section" id="episodes">
-      <div class="section-head reveal">
-        <div><p class="eyebrow">ARC 01 JOURNEY</p><h2>Eight discoveries</h2></div>
-        <p>Each episode unlocks one essential idea, then connects it to the larger system of life.</p>
-      </div>
-      <div class="episode-grid">
-        <a class="episode active reveal" href="episode-01.html"><small>EPISODE 01 · READY</small><b>01</b><h3>What Counts as Life?</h3><p>Find the boundary between matter and a living system.</p><span>START EPISODE →</span></a>
-        <article class="episode reveal"><small>EPISODE 02</small><b>02</b><h3>Water: The Living Medium</h3><p>See how polarity makes life’s chemistry possible.</p><span>COMING NEXT</span></article>
-        <article class="episode reveal"><small>EPISODE 03</small><b>03</b><h3>Carbon’s Four Hands</h3><p>Discover the architecture behind biological diversity.</p><span>LOCKED</span></article>
-        <article class="episode reveal"><small>EPISODE 04</small><b>04</b><h3>Molecules That Build Us</h3><p>Connect monomers, polymers, structure and function.</p><span>LOCKED</span></article>
-        <article class="episode reveal"><small>EPISODE 05</small><b>05</b><h3>Energy for Order</h3><p>Explain why life must continuously transform energy.</p><span>LOCKED</span></article>
-        <article class="episode reveal"><small>EPISODE 06</small><b>06</b><h3>Information Becomes Life</h3><p>Follow biological information from storage to expression.</p><span>LOCKED</span></article>
-        <article class="episode reveal"><small>EPISODE 07</small><b>07</b><h3>The First Boundary</h3><p>Understand why membranes make cellular life possible.</p><span>LOCKED</span></article>
-        <article class="episode reveal"><small>EPISODE 08</small><b>08</b><h3>Everything Connects</h3><p>Assemble the molecular system into the first complete model of life.</p><span>LOCKED</span></article>
-      </div>
-    </section>
-
-    <section class="section biology-method" id="method">
-      <div class="section-head reveal">
-        <div><p class="eyebrow">ONE ARC · COMPLETE MASTERY</p><h2>Your learning path</h2></div>
-        <p>An ARC is complete only when understanding transfers to evidence, practical work and assessment.</p>
-      </div>
-      <div class="path-track reveal">
-        <div><b>01</b><strong>Discover</strong><small>Cinematic episodes</small></div>
-        <div><b>02</b><strong>Connect</strong><small>Mind Map + Knowledge DNA</small></div>
-        <div><b>03</b><strong>Master</strong><small>Summary + Exam Mastery</small></div>
-        <div><b>04</b><strong>Investigate</strong><small>Practical + Research</small></div>
-        <div><b>05</b><strong>Pass</strong><small>Review + Quality Audit</small></div>
-      </div>
-      <div class="character-promise reveal">
-        <div><img src="sigma-professor-owl.png" alt=""><strong>Professor Owl</strong><small>reflects: “What have we learned?”</small></div>
-        <div><img src="sigma-cricket.png" alt=""><strong>Cricket</strong><small>opens discovery with “Why?”</small></div>
-        <div><img src="sigma-little-ant.png" alt=""><strong>Little Ant</strong><small>reasons step by step with “How?”</small></div>
-        <div><img src="sigma-water.png" alt=""><strong>Sigma Water</strong><small>clarifies, connects and memory-locks</small></div>
-      </div>
-    </section>
-
-    <section class="closing biology-closing">
-      <p class="eyebrow">ARC 01 · EPISODE 01</p>
-      <h2>Your first question is waiting.</h2>
-      <p>What separates a living cell from a collection of molecules?</p>
-      <a class="primary biology-cta" href="episode-01.html">Begin the discovery <span>→</span></a>
     </section>
   </main>
 
-  <footer>
-    <div class="brand"><img class="brand-logo" src="sigma-official-logo.png" alt=""><span>SIGMA <small>BIOLOGY</small></span></div>
-    <p>PEACEFUL MIND · KIND HEART · KEEP GROWING.</p>
-    <small>© 2026 SIGMA Education</small>
-  </footer>
+  <aside class="biology-motto" aria-label="SIGMA motto">
+    <span>PEACEFUL MIND</span><i>•</i><span>KINDLY HEART</span><i>•</i><span>KEEP GROWING</span>
+  </aside>
 </body>
 </html>

@@ -53,3 +53,77 @@
 .character-promise div{padding:14px 23px 23px;overflow:hidden}
 .character-promise img{display:block;width:100%;height:155px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 12px 16px rgba(0,0,0,.28))}
 .character-promise small{line-height:1.5}
+
+/* BIOLOGY — THE LIVING UNIVERSE LANDING */
+.biology-landing{--life:#7cf3ad;--life-gold:#edca78;--life-ink:#031411;min-height:100vh;background:#031411;color:#f4fff8}
+.biology-fixed-art{position:fixed;z-index:-3;inset:0;background:#05231c url("biology-hero-bg.png") center 42%/cover no-repeat}
+.biology-atmosphere{position:fixed;z-index:-2;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(2,18,15,.96) 0%,rgba(2,18,15,.78) 35%,rgba(2,18,15,.18) 68%,rgba(2,18,15,.48) 100%),linear-gradient(0deg,rgba(2,15,13,.78) 0%,transparent 32%,rgba(1,12,10,.18) 75%,rgba(1,10,9,.5) 100%)}
+.biology-nav{border-bottom:1px solid rgba(152,237,190,.13);background:linear-gradient(180deg,rgba(2,17,14,.58),transparent);backdrop-filter:blur(2px)}
+.biology-nav.scrolled{background:rgba(2,18,15,.89);border-color:rgba(152,237,190,.15)}
+.biology-nav nav a:hover{color:var(--life)}
+.biology-enter{background:linear-gradient(120deg,#46c982,#157657);box-shadow:0 8px 30px rgba(54,196,124,.2)}
+.biology-landing-main{position:relative}
+.biology-entry{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px max(7vw,28px) 100px}
+.biology-entry-copy{width:min(680px,58vw);text-shadow:0 3px 24px rgba(0,0,0,.42)}
+.biology-breadcrumb{display:inline-flex;margin-bottom:38px;color:#b7d6c5;font-size:9px;font-weight:700;letter-spacing:.2em}
+.biology-breadcrumb:hover{color:var(--life)}
+.biology-kicker{margin:0;color:var(--life);font-size:10px;font-weight:800;letter-spacing:.34em}
+.biology-entry h1{margin:15px 0 22px;font:600 clamp(76px,10vw,150px)/.82 "Playfair Display",serif;letter-spacing:-.055em;background:linear-gradient(180deg,#fff 22%,#b5e8c8 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.biology-intro{max-width:650px;margin:0;color:#deeee5;font-size:clamp(17px,1.55vw,22px);line-height:1.75}
+.biology-intro strong{color:#fff;font-weight:700}
+.biology-entry-actions{display:flex;align-items:center;gap:24px;margin:34px 0 36px}
+.biology-primary{display:inline-flex;align-items:center;justify-content:center;gap:25px;padding:16px 24px;border:1px solid rgba(143,255,191,.35);border-radius:999px;background:linear-gradient(120deg,#4bd28a,#187959);box-shadow:0 12px 35px rgba(39,187,112,.22);color:white;font-size:12px;font-weight:800}
+.biology-primary:hover{transform:translateY(-2px);box-shadow:0 16px 45px rgba(39,187,112,.3)}
+.biology-primary span{font-size:18px}
+.biology-quiet-link{padding:10px 2px;border-bottom:1px solid rgba(228,246,236,.5);color:#d9ebe1;font-size:11px;font-weight:700}
+.biology-levels{display:flex;align-items:center;gap:12px;color:#c2dacb;font-size:8px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.biology-levels i{width:26px;height:1px;background:linear-gradient(90deg,rgba(124,243,173,.2),var(--life))}
+.biology-scroll{position:absolute;bottom:64px;right:max(6vw,30px);display:flex;align-items:center;gap:15px;color:#d4ebde;font-size:8px;font-weight:700;letter-spacing:.22em;writing-mode:vertical-rl}
+.biology-scroll b{color:var(--life);font-size:20px;animation:bob 1.8s infinite}
+.biology-glass-section{position:relative;min-height:100vh;padding:130px max(7vw,28px);background:linear-gradient(180deg,rgba(2,18,15,.34),rgba(2,18,15,.84) 30%,rgba(2,18,15,.92));backdrop-filter:blur(3px)}
+.biology-section-heading{display:grid;grid-template-columns:1fr 1fr;column-gap:70px;align-items:end;max-width:1200px;margin:0 auto 65px}
+.biology-section-heading .biology-kicker{grid-column:1/-1}
+.biology-section-heading h2,.biology-start h2{margin:15px 0 0;font:600 clamp(48px,6vw,82px)/.98 "Playfair Display",serif;letter-spacing:-.04em}
+.biology-section-heading>p:last-child{margin:0;color:#bed1c5;font-size:15px;line-height:1.8}
+.biology-lens-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1400px;margin:auto}
+.biology-lens{min-height:330px;padding:28px;border:1px solid rgba(139,236,181,.16);border-radius:20px;background:linear-gradient(145deg,rgba(7,42,32,.75),rgba(3,24,20,.5));box-shadow:0 24px 70px rgba(0,0,0,.18);backdrop-filter:blur(14px);transition:.35s}
+.biology-lens:hover{transform:translateY(-7px);border-color:rgba(124,243,173,.46);background:linear-gradient(145deg,rgba(10,58,43,.84),rgba(3,24,20,.66))}
+.biology-lens>b{display:grid;place-items:center;width:44px;height:44px;border:1px solid rgba(237,202,120,.32);border-radius:50%;color:var(--life-gold);font:600 16px "Playfair Display",serif}
+.biology-lens small{display:block;margin-top:62px;color:var(--life);font-size:8px;font-weight:800;letter-spacing:.2em}
+.biology-lens h3{margin:13px 0 12px;font:600 27px "Playfair Display",serif}
+.biology-lens p{margin:0;color:#a9c2b3;font-size:12px;line-height:1.75}
+.biology-start{padding:130px max(7vw,28px) 180px;background:linear-gradient(180deg,rgba(2,18,15,.92),rgba(1,12,10,.98))}
+.biology-start-card{display:flex;align-items:end;justify-content:space-between;gap:50px;max-width:1200px;margin:auto;padding:55px;border:1px solid rgba(237,202,120,.23);border-radius:28px;background:radial-gradient(circle at 100% 0,rgba(49,190,112,.18),transparent 35%),rgba(7,38,29,.82)}
+.biology-start h2{font-size:clamp(45px,5vw,70px)}
+.biology-start-card>div>p:last-child{max-width:650px;margin:22px 0 0;color:#b7cbbf;line-height:1.75}
+.biology-start-card .biology-primary{flex:none}
+.biology-motto{position:fixed;z-index:60;left:50%;bottom:14px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;width:max-content;max-width:calc(100vw - 30px);padding:9px 18px;border:1px solid rgba(237,202,120,.24);border-radius:999px;background:rgba(2,18,15,.8);backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(0,0,0,.28);color:var(--life-gold);font-size:7px;font-weight:800;letter-spacing:.2em}
+.biology-motto i{color:var(--life);font-style:normal}
+@media(max-width:900px){
+  .biology-entry-copy{width:min(720px,82vw)}
+  .biology-atmosphere{background:linear-gradient(90deg,rgba(2,18,15,.93),rgba(2,18,15,.56) 76%,rgba(2,18,15,.45)),linear-gradient(0deg,rgba(2,15,13,.7),transparent 45%)}
+  .biology-section-heading{grid-template-columns:1fr;gap:25px}
+  .biology-lens-grid{grid-template-columns:1fr 1fr}
+  .biology-start-card{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:650px){
+  .biology-fixed-art{background-position:58% center}
+  .biology-atmosphere{background:linear-gradient(180deg,rgba(2,15,13,.55),rgba(2,18,15,.83) 58%,rgba(2,18,15,.94))}
+  .biology-entry{align-items:flex-end;padding:110px 22px 100px}
+  .biology-entry-copy{width:100%}
+  .biology-breadcrumb{margin-bottom:25px}
+  .biology-entry h1{font-size:clamp(70px,24vw,108px)}
+  .biology-intro{font-size:16px;line-height:1.65}
+  .biology-entry-actions{align-items:flex-start;flex-direction:column;gap:14px;margin:27px 0}
+  .biology-levels{gap:6px;font-size:6px}
+  .biology-levels i{width:10px}
+  .biology-scroll{display:none}
+  .biology-glass-section{padding:100px 22px}
+  .biology-section-heading{margin-bottom:38px}
+  .biology-lens-grid{grid-template-columns:1fr}
+  .biology-lens{min-height:250px}
+  .biology-lens small{margin-top:35px}
+  .biology-start{padding:90px 22px 140px}
+  .biology-start-card{padding:32px 24px}
+  .biology-motto{bottom:9px;gap:5px;padding:8px 10px;font-size:5.5px;letter-spacing:.12em}
+}
