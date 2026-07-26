@@ -103,17 +103,18 @@
 /* BIOLOGY — SCALE OF LIFE + ARC LIBRARY */
 .biology-pathway-section{position:relative;padding:130px max(4vw,24px);background:linear-gradient(180deg,rgba(2,18,15,.5),rgba(2,18,15,.94) 24%,#031713);backdrop-filter:blur(3px)}
 .biology-pathway-section .biology-section-heading{max-width:1320px}
-.biology-pathway{display:grid;grid-template-columns:repeat(4,1fr auto) 1fr;align-items:center;gap:12px;max-width:1500px;margin:auto}
+.biology-pathway{display:grid;grid-template-columns:repeat(4,1fr auto) 1fr;align-items:start;gap:18px;max-width:1500px;margin:auto}
 .pathway-arrow{display:flex;align-items:center;min-width:28px;color:var(--life)}
+.pathway-arrow{padding-top:clamp(78px,7.7vw,116px)}
 .pathway-arrow span{width:100%;height:2px;background:linear-gradient(90deg,rgba(124,243,173,.15),rgba(124,243,173,.9));box-shadow:0 0 12px rgba(124,243,173,.55)}
 .pathway-arrow b{margin-left:-2px;font:400 34px/1 Manrope,sans-serif;text-shadow:0 0 15px rgba(124,243,173,.85);animation:pathPulse 2s ease-in-out infinite}
 @keyframes pathPulse{50%{transform:translateX(4px);filter:brightness(1.5)}}
-.pathway-stage{min-width:0;border:1px solid rgba(139,236,181,.16);border-radius:20px;overflow:hidden;background:rgba(3,28,23,.86);box-shadow:0 20px 65px rgba(0,0,0,.24);transition:.35s}
-.pathway-stage:hover{transform:translateY(-7px);border-color:rgba(124,243,173,.45)}
-.stage-art{display:block;width:100%;height:190px;object-fit:cover;border-bottom:1px solid rgba(124,243,173,.18);filter:saturate(1.04) contrast(1.03)}
-.pathway-stage>span{display:block;margin:22px 22px 7px;color:var(--life-gold);font-size:8px;font-weight:800;letter-spacing:.18em}
-.pathway-stage h3{margin:0 22px;font:600 26px "Playfair Display",serif}
-.pathway-stage p{min-height:105px;margin:12px 22px 24px;color:#a9c2b3;font-size:10px;line-height:1.7}
+.pathway-stage{min-width:0;text-align:center;background:none;border:0;box-shadow:none;transition:.35s}
+.pathway-stage:hover{transform:translateY(-7px)}
+.stage-art{display:block;width:min(100%,230px);aspect-ratio:1;margin:0 auto;object-fit:contain;border:0;border-radius:0;clip-path:none;background:transparent;filter:saturate(1.06) contrast(1.04);box-shadow:none}
+.pathway-stage>span{display:block;margin:22px 0 7px;color:var(--life-gold);font-size:8px;font-weight:800;letter-spacing:.18em}
+.pathway-stage h3{margin:0;font:600 26px "Playfair Display",serif}
+.pathway-stage p{min-height:105px;margin:12px auto 0;max-width:230px;color:#a9c2b3;font-size:10px;line-height:1.7}
 .biology-curriculum{position:relative;padding:130px max(5vw,24px) 180px;background:radial-gradient(circle at 50% 0,rgba(27,131,85,.2),transparent 30%),#02120f}
 .curriculum-heading{display:flex;align-items:end;justify-content:space-between;gap:60px;max-width:1400px;margin:0 auto 55px}
 .curriculum-heading h2{margin:14px 0 0;font:600 clamp(48px,6vw,82px)/1 "Playfair Display",serif;letter-spacing:-.04em}
@@ -134,7 +135,7 @@
   .biology-lens-grid{grid-template-columns:1fr 1fr}
   .biology-start-card{align-items:flex-start;flex-direction:column}
   .biology-pathway{grid-template-columns:repeat(5,1fr);gap:12px}.pathway-arrow{display:none}
-  .stage-art{height:145px}.pathway-stage p{min-height:125px}
+  .stage-art{width:min(100%,170px)}.pathway-stage p{min-height:125px}
   .arc-grid{grid-template-columns:1fr 1fr}.curriculum-heading{align-items:flex-start;flex-direction:column}
 }
 @media(max-width:650px){
@@ -159,7 +160,7 @@
   .biology-motto{bottom:9px;gap:5px;padding:8px 10px;font-size:5.5px;letter-spacing:.12em}
   .biology-pathway-section{padding:100px 22px}
   .biology-pathway{display:grid;grid-template-columns:1fr;max-width:460px;overflow:visible;padding:0}
-  .pathway-stage{width:100%}.stage-art{height:220px}.pathway-stage p{min-height:auto}
-  .pathway-arrow{display:flex;justify-content:center;height:38px;transform:rotate(90deg)}.pathway-arrow span{width:34px;flex:none}
+  .pathway-stage{width:100%}.stage-art{width:min(72vw,260px)}.pathway-stage p{min-height:auto}
+  .pathway-arrow{display:flex;justify-content:center;height:38px;padding-top:0;transform:rotate(90deg)}.pathway-arrow span{width:34px;flex:none}
   .biology-curriculum{padding:95px 22px 135px}.curriculum-heading{gap:24px}.arc-grid{grid-template-columns:1fr}.arc-thumb{min-height:230px}.arc-thumb h3{font-size:31px}
 }
