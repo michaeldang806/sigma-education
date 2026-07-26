@@ -99,12 +99,41 @@
 .biology-start-card .biology-primary{flex:none}
 .biology-motto{position:fixed;z-index:60;left:50%;bottom:14px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;width:max-content;max-width:calc(100vw - 30px);padding:9px 18px;border:1px solid rgba(237,202,120,.24);border-radius:999px;background:rgba(2,18,15,.8);backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(0,0,0,.28);color:var(--life-gold);font-size:7px;font-weight:800;letter-spacing:.2em}
 .biology-motto i{color:var(--life);font-style:normal}
+
+/* BIOLOGY — SCALE OF LIFE + ARC LIBRARY */
+.biology-pathway-section{position:relative;padding:130px max(4vw,24px);background:linear-gradient(180deg,rgba(2,18,15,.5),rgba(2,18,15,.94) 24%,#031713);backdrop-filter:blur(3px)}
+.biology-pathway-section .biology-section-heading{max-width:1320px}
+.biology-pathway{display:grid;grid-template-columns:repeat(4,1fr auto) 1fr;align-items:center;gap:12px;max-width:1500px;margin:auto}
+.biology-pathway>i{color:var(--life);font-style:normal;font-size:20px;opacity:.65}
+.pathway-stage{min-width:0;border:1px solid rgba(139,236,181,.16);border-radius:20px;overflow:hidden;background:rgba(3,28,23,.86);box-shadow:0 20px 65px rgba(0,0,0,.24);transition:.35s}
+.pathway-stage:hover{transform:translateY(-7px);border-color:rgba(124,243,173,.45)}
+.stage-art{height:190px;background-image:linear-gradient(0deg,rgba(2,20,16,.32),transparent 55%),url("biology-hero-bg.png");background-size:cover}
+.stage-molecules .stage-art{background-position:7% 48%}.stage-cells .stage-art{background-position:27% 48%}.stage-organisms .stage-art{background-position:50% 48%}.stage-ecosystems .stage-art{background-position:72% 48%}.stage-biosphere .stage-art{background-position:94% 48%}
+.pathway-stage>span{display:block;margin:22px 22px 7px;color:var(--life-gold);font-size:8px;font-weight:800;letter-spacing:.18em}
+.pathway-stage h3{margin:0 22px;font:600 26px "Playfair Display",serif}
+.pathway-stage p{min-height:105px;margin:12px 22px 24px;color:#a9c2b3;font-size:10px;line-height:1.7}
+.biology-curriculum{position:relative;padding:130px max(5vw,24px) 180px;background:radial-gradient(circle at 50% 0,rgba(27,131,85,.2),transparent 30%),#02120f}
+.curriculum-heading{display:flex;align-items:end;justify-content:space-between;gap:60px;max-width:1400px;margin:0 auto 55px}
+.curriculum-heading h2{margin:14px 0 0;font:600 clamp(48px,6vw,82px)/1 "Playfair Display",serif;letter-spacing:-.04em}
+.curriculum-heading>p{max-width:560px;margin:0;color:#aac2b4;font-size:14px;line-height:1.8}
+.arc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1500px;margin:auto}
+.arc-card{display:block;min-width:0;border:1px solid rgba(139,236,181,.13);border-radius:20px;overflow:hidden;background:#061f19;box-shadow:0 18px 55px rgba(0,0,0,.22);transition:.35s}
+.arc-card:hover{transform:translateY(-6px);border-color:rgba(124,243,173,.38);box-shadow:0 26px 70px rgba(0,0,0,.35)}
+.arc-thumb{position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end;min-height:245px;padding:26px;overflow:hidden;background-image:linear-gradient(0deg,rgba(1,13,11,.97) 0%,rgba(1,13,11,.48) 56%,rgba(1,13,11,.06) 100%),url("biology-hero-bg.png");background-size:auto,cover;background-position:center}
+.arc-thumb:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(circle at var(--x,50%) var(--y,40%),var(--glow,#31c982),transparent 44%);mix-blend-mode:screen;opacity:.27}
+.arc-thumb>span{color:var(--life);font-size:9px;font-weight:800;letter-spacing:.2em}.arc-thumb h3{max-width:380px;margin:10px 0 16px;font:600 clamp(25px,2.2vw,35px)/1.06 "Playfair Display",serif;text-shadow:0 3px 20px #000}.arc-thumb b{color:var(--life-gold);font-size:7px;letter-spacing:.18em}
+.arc-card>p{min-height:72px;margin:0;padding:20px 25px;color:#9bb6a6;font-size:11px;line-height:1.65}
+.arc-live{border-color:rgba(237,202,120,.42)}.arc-live .arc-thumb b{color:#fff}.arc-live:hover{border-color:var(--life-gold)}
+.arc-01{background-position:12% 44%}.arc-02{background-position:20% 52%;--glow:#4ecfff}.arc-03{background-position:30% 45%;--glow:#70e8ff}.arc-04{background-position:34% 58%;--glow:#23cc9a}.arc-05{background-position:40% 38%;--glow:#f0bb5f}.arc-06{background-position:43% 60%;--glow:#ff9b4d}.arc-07{background-position:49% 42%;--glow:#ffe65d}.arc-08{background-position:21% 37%;--glow:#aa78ff}.arc-09{background-position:27% 63%;--glow:#e276ff}.arc-10{background-position:34% 50%;--glow:#4edbff}.arc-11{background-position:46% 50%;--glow:#ff85b8}.arc-12{background-position:57% 43%;--glow:#74e055}.arc-13{background-position:65% 48%;--glow:#86e75f}.arc-14{background-position:73% 54%;--glow:#40d578}.arc-15{background-position:82% 45%;--glow:#f4c85e}.arc-16{background-position:52% 58%;--glow:#45dbe4}.arc-17{background-position:38% 46%;--glow:#ed6a72}.arc-18{background-position:60% 62%;--glow:#ff9ec5}
 @media(max-width:900px){
   .biology-entry-copy{width:min(720px,82vw)}
   .biology-atmosphere{background:linear-gradient(90deg,rgba(2,18,15,.93),rgba(2,18,15,.56) 76%,rgba(2,18,15,.45)),linear-gradient(0deg,rgba(2,15,13,.7),transparent 45%)}
   .biology-section-heading{grid-template-columns:1fr;gap:25px}
   .biology-lens-grid{grid-template-columns:1fr 1fr}
   .biology-start-card{align-items:flex-start;flex-direction:column}
+  .biology-pathway{grid-template-columns:repeat(5,1fr);gap:12px}.biology-pathway>i{display:none}
+  .stage-art{height:145px}.pathway-stage p{min-height:125px}
+  .arc-grid{grid-template-columns:1fr 1fr}.curriculum-heading{align-items:flex-start;flex-direction:column}
 }
 @media(max-width:650px){
   .biology-fixed-art{background-position:58% center}
@@ -126,4 +155,8 @@
   .biology-start{padding:90px 22px 140px}
   .biology-start-card{padding:32px 24px}
   .biology-motto{bottom:9px;gap:5px;padding:8px 10px;font-size:5.5px;letter-spacing:.12em}
+  .biology-pathway-section{padding:100px 22px}
+  .biology-pathway{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 18px}
+  .pathway-stage{flex:0 0 82vw;scroll-snap-align:center}.stage-art{height:220px}.pathway-stage p{min-height:auto}
+  .biology-curriculum{padding:95px 22px 135px}.curriculum-heading{gap:24px}.arc-grid{grid-template-columns:1fr}.arc-thumb{min-height:230px}.arc-thumb h3{font-size:31px}
 }
